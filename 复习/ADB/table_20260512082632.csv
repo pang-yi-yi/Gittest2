@@ -1,6 +1,0 @@
-命令,作用说明,备注
-`adb devices`,查看当前连接的设备列表,"状态 `device` 表示正常，`unauthorized` 需在手机端授权 @ref[2,5]"
-`adb kill-server`,停止 ADB 服务,"当设备连接异常（如 offline）时尝试重启服务 @ref[2,3]"
-`adb start-server`,启动 ADB 服务,"通常执行 `adb devices` 时会自动启动 @ref[3,9]"
-`adb connect <IP>:<端口>`,无线连接设备,默认端口通常为 5555，需先在手机上开启无线调试 @ref[4]
-`adb disconnect`,断开无线连接,- @ref[4]

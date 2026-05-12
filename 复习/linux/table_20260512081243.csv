@@ -1,6 +1,0 @@
-命令,常用参数/示例,作用说明
-ps,`ps -ef`  `ps aux`,查看当前运行的进程快照 @ref[4]
-top,`top`,实时显示系统资源占用情况（CPU、内存），类似任务管理器 @ref[2]
-kill,`kill -9 <PID>`,终止指定进程ID的程序 @ref[2]
-chmod,`chmod 755 script.sh`,修改文件权限。你之前的图片中涉及 sudo 权限配置，通常也需要配合权限管理 [用户本地知识库]
-chown,`chown user:group file`,修改文件所有者和所属组 @ref[5]

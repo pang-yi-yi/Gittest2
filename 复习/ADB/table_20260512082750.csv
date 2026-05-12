@@ -1,5 +1,0 @@
-命令,作用说明,备注
-`adb root`,以 root 权限重启 adbd,"仅限 Userdebug 或 Eng 版本系统 @ref[3,6]"
-`adb remount`,重新挂载系统分区为读写,"修改系统文件前通常需要执行此命令 @ref[3,4]"
-`adb shell settings get ...`,获取系统设置值,如亮度、休眠时间等 @ref[1]
-`adb shell settings put ...`,修改系统设置值,如 `settings put system screen_brightness 80` @ref[1]

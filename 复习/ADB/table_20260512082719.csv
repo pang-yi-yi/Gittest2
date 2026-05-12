@@ -1,6 +1,0 @@
-命令,作用说明,备注
-`adb logcat`,实时打印系统日志,"可按标签过滤，如 `adb logcat -s TagName` @ref[3,4]"
-`adb shell screencap -p /sdcard/screen.png`,手机截屏,"截图保存在手机指定路径 @ref[3,4]"
-`adb shell screenrecord /sdcard/demo.mp4`,手机录屏,录制屏幕操作视频 @ref[6]
-`adb shell dumpsys activity`,查看当前活动组件,常用于查找当前前台 Activity 的包名和类名 @ref[2]
-`adb shell am start -n <包名>/<类名>`,直接启动某个 Activity,"用于快速打开特定页面 @ref[1,3]"

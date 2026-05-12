@@ -1,6 +1,0 @@
-命令,常用参数/示例,作用说明
-cat,`cat file.txt`  `cat -n file.txt`,"查看文件内容。- `-n`: 显示行号 @ref[2,7]"
-less,`less file.log`,分页查看大文件，支持上下翻页搜索（按 `q` 退出） @ref[2]
-head/tail,`tail -f app.log`,查看文件头部或尾部。- `-f`: 实时追踪文件末尾变化（常用于看日志） @ref[2]
-touch,`touch newfile.txt`,"创建空文件或更新文件时间戳 @ref[3,7]"
-vim/nano,`vim file.txt`,文本编辑器。你之前的图片中提到通过 `visudo` 调用 `vi编辑器修改 `/etc/sudoers` [用户本地知识库]

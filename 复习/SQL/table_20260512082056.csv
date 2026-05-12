@@ -1,5 +1,0 @@
-操作,语法模板,示例,注意事项
-新增,"`INSERT INTO 表名(字段1,字段2) VALUES(值1,值2);`","`INSERT INTO users(name,age) VALUES ('张三',25);`",省略字段列表时，必须按表顺序提供所有列的值
-删除,`DELETE FROM 表名 WHERE 条件;`,`DELETE FROM users WHERE id = 1;`,务必加WHERE条件，否则会清空整张表
-修改,`UPDATE 表名 SET 字段=新值 WHERE 条件;`,`UPDATE users SET age = 26 WHERE name = '张三';`,不加WHERE会修改全表所有行的该字段值
-基础查询,`SELECT 字段 FROM 表名 WHERE 条件 ORDER BY 排序字段 排序方式;`,`SELECT * FROM users WHERE age > 20 ORDER BY id DESC;`,`*`代表查询所有列；`DESC`降序，`ASC`升序（默认）

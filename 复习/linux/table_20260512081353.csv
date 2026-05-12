@@ -1,2 +1,0 @@
-命令,常用参数/示例,作用说明
-tar,`tar -zcvf backup.tar.gz dir/`  `tar -zxvf backup.tar.gz`,打包与解压缩。- `z`: gzip压缩 - `c`: 创建 - `x`: 解压 - `v`: 显示过程 - `f`: 指定文件名 @ref[5]

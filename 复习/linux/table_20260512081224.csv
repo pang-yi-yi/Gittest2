@@ -1,4 +1,0 @@
-命令,常用参数/示例,作用说明
-find,`find / -name "config"`,"在指定目录下查找文件.- `-name`: 按文件名查找 @ref[5,6]"
-grep,`grep "error" app.log`  `ps -ef | grep java`,在文件中搜索特定字符串常配合管道 `
-which,`which python`,查找可执行文件的路径 @ref[2]
