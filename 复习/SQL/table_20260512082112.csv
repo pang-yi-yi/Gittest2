@@ -1,0 +1,11 @@
+功能,语法示例,说明
+模糊查询,`SELECT * FROM users WHERE name LIKE '张%';`,`%`匹配任意长度字符，`_`匹配单个字符
+结果去重,`SELECT DISTINCT city FROM users;`,去除查询结果中的重复行，只保留不重复的值
+限制返回行数,"`SELECT * FROM users LIMIT 10;``SELECT * FROM users LIMIT 5,10;`",第一个示例返回前10行；第二个示例跳过前5行，返回第6~15行（分页场景常用）
+范围查询,"`SELECT * FROM users WHERE age BETWEEN 18 AND 30;``SELECT * FROM users WHERE id IN (1,3,5);`",`BETWEEN AND`匹配连续范围；`IN`匹配离散的多个值
+空值查询,`SELECT * FROM users WHERE email IS NULL;``SELECT * FROM users WHERE email IS NOT NULL;`,判断字段是否为空必须用`IS NULL`，不能用`= NULL`
+聚合统计,"`SELECT COUNT(*) AS total FROM users;``SELECT AVG(age) AS avg_age, MAX(age) AS max_age FROM users;`",常用聚合函数：`COUNT`统计行数、`SUM`求和、`AVG`求平均、`MAX`最大值、`MIN`最小值
+分组统计,"`SELECT city, COUNT(*) FROM users GROUP BY city;``SELECT city, COUNT(*) FROM users GROUP BY city HAVING COUNT(*) > 10;`",按指定字段分组统计；`HAVING`对分组后的结果过滤（不能用`WHERE`替代）
+内连接查询,"`SELECT u.name, o.order_name FROM users u INNER JOIN orders o ON u.id = o.user_id;`",只返回两个表中匹配条件的交集数据
+左外连接查询,"`SELECT u.name, o.order_name FROM users u LEFT JOIN orders o ON u.id = o.user_id;`",返回左表全部数据，右表匹配不到则显示`NULL`
+子查询,`SELECT * FROM users WHERE id = (SELECT user_id FROM orders WHERE id = 10);`,查询语句嵌套，把内层查询结果作为外层查询的条件

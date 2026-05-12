@@ -1,0 +1,5 @@
+命令,作用说明,备注
+`adb install <apk路径>`,安装 APK 到手机,"若已安装可加 `-r` 强制覆盖安装 @ref[2,4]"
+`adb uninstall <包名>`,卸载应用,例如：`adb uninstall com.heytap.browser` @ref[1]
+`adb shell pm list packages`,列出所有应用包名,"加 `-3` 只看第三方应用，加 `-s` 只看系统应用 @ref[1,2]"
+`adb shell pm clear <包名>`,清除应用数据和缓存,相当于在设置里点击“清除数据” @ref[4]

@@ -1,0 +1,13 @@
+操作,语法模板,示例
+创建数据库,`CREATE DATABASE 库名 [CHARSET 编码];`,`CREATE DATABASE my_demo CHARSET utf8mb4;`
+查看所有数据库,`SHOW DATABASES;`,-
+切换/使用数据库,`USE 库名;`,`USE my_demo;`
+删除数据库,`DROP DATABASE 库名;`,`DROP DATABASE my_demo;`  操作不可恢复
+创建表,"`CREATE TABLE 表名(字段名 类型 约束, ...);`","`CREATE TABLE students(``id INT PRIMARY KEY AUTO_INCREMENT,``name VARCHAR(20) NOT NULL``);`"
+查看所有表,`SHOW TABLES;`,-
+查看表结构,`DESC 表名;`,`DESC students;`
+新增字段,`ALTER TABLE 表名 ADD COLUMN 字段名 类型;`,`ALTER TABLE students ADD COLUMN email VARCHAR(50);`
+修改字段,`ALTER TABLE 表名 CHANGE 旧字段名 新字段名 类型;`,`ALTER TABLE students CHANGE name username VARCHAR(30);`
+删除字段,`ALTER TABLE 表名 DROP COLUMN 字段名;`,`ALTER TABLE students DROP COLUMN email;`
+修改表名,`ALTER TABLE 旧表名 RENAME TO 新表名;`,`ALTER TABLE students RENAME TO stu_info;`
+删除表,`DROP TABLE 表名;`,`DROP TABLE stu_info;`  操作不可恢复

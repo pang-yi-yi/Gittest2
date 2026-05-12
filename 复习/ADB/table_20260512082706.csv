@@ -1,0 +1,3 @@
+命令,作用说明,备注
+`adb push <本地路径> <手机路径>`,电脑文件传到手机,"例如：`adb push D:\test.txt /sdcard/` @ref[2,3]"
+`adb pull <手机路径> <本地路径>`,手机文件拉到电脑,"例如：`adb pull /sdcard/test.txt D:\` @ref[2,3]"
